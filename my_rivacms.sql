@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `prenotazioni` (
 --
 
 INSERT INTO `prenotazioni` (`id`, `cliente`, `arrivo`, `partenza`, `mail`, `phone`) VALUES
-(1, 'Riva Sebastiano', '2018-11-17', '2018-11-18', 'skebby11@gmail.com', '3383576286'),
+(1, 'Riva Sebastiano', '2018-11-17', '2018-11-18', 'sebastiano@mail.com', '33300022255'),
 (4, 'Nome 2', '2018-11-25', '2018-12-02', 'mail2@gmail.com', '3387481551'),
 (5, 'Nome 3', '2018-12-08', '2018-12-09', 'mail3@gmail.com', '3387481551'),
 (6, 'Nome 4', '2018-12-02', '2018-12-06', 'mail4@gmail.com', '3387481551');
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `user_type`) VALUES
-(1, 'skebby', '5c8a45f93fc8e01dc82a92828fb6f2a8', 'admin');
+(1, 'skebby', '5c8a45f95fc8e31dc82a92428fb6f2a8', 'admin');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
