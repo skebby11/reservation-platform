@@ -11,7 +11,7 @@
 	$year = date("Y");
 	$month = date("m");
 	$monthday = date('d');
-	$mindate = $year . '-' . $month. '-'. $monthday;
+	$mindate = $monthday . '-' . $month. '-'. $year;
 
 	// call the reservation() function if reserve is clicked
 	if (isset($_POST['reserve'])) {

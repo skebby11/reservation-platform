@@ -6,6 +6,8 @@
 		header('location: login.php');
 	}
 
+	$today = $monthday . '-' . $month. '-'. $year;
+
 ?>
 
 <!DOCTYPE html>
@@ -54,9 +56,8 @@
       <th scope="col">Phone</th>
     </tr>
   </thead>
-  <tbody>
-    <?php 
-	$resquery = "SELECT id, cliente, arrivo, partenza, mail, phone FROM prenotazioni ORDER BY arrivo ASC ";
+  <tbody><?php 
+	$resquery = "SELECT id, cliente, arrivo, partenza, mail, phone FROM prenotazioni WHERE partenza > CURDATE() ORDER BY arrivo ASC";
 	$resresults = mysqli_query($db, $resquery);
 	
 	if (mysqli_num_rows($resresults) > 0) {
